@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.2"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            Material Design配色 | 
+        
+        Peter1303
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/avatar.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="分享我的生活点点滴滴">
+    <meta name="keywords" content=",Android">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: ;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Peter1303">
+    <meta name="msapplication-starturl" content="https://peter1303.github.io/2018/01/28/Material-Design配色/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Peter1303">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    <meta name="google-site-verification" content="Pter1303" />
+    <meta name="baidu-site-verification" content="Pter1303" />
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://peter1303.github.io/2018/01/28/Material-Design配色/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Material Design配色 | Peter1303">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="分享我的生活点点滴滴">
+    <meta property="og:article:tag" content="Android"> 
+
+    
+        <meta property="article:published_time" content="Sun Jan 28 2018 23:59:09 GMT+0800">
+        <meta property="article:modified_time" content="Mon Jan 29 2018 12:24:18 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://peter1303.github.io/2018/01/28/Material-Design配色/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://peter1303.github.io/2018/01/28/Material-Design配色/index.html",
+    "headline": "Material Design配色",
+    "datePublished": "Sun Jan 28 2018 23:59:09 GMT+0800",
+    "dateModified": "Mon Jan 29 2018 12:24:18 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Peter1303",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "深自缄默，如云漂泊"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Peter1303",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",Android",
+    "description": "分享我的生活点点滴滴",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                Material Design配色
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Peter1303</strong>
+        <span>1月 28, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Android/">Android</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Material Design配色&url=https://peter1303.github.io/2018/01/28/Material-Design配色/index.html&pic=https://peter1303.github.io/img/avatar.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Material Design配色&url=https://peter1303.github.io/2018/01/28/Material-Design配色/index.html&via=Peter1303" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://peter1303.github.io/2018/01/28/Material-Design配色/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;resources&gt;</span><br><span class="line"> &lt;!-- red --&gt;</span><br><span class="line">    &lt;color name=&quot;md_red_50_color_code&quot;&gt;#fde0dc&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_red_100_color_code&quot;&gt;#f9bdbb&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_red_200_color_code&quot;&gt;#f69988&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_red_300_color_code&quot;&gt;#f36c60&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_red_400_color_code&quot;&gt;#e84e40&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_red_500_color_code&quot;&gt;#e51c23&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_red_600_color_code&quot;&gt;#dd191d&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_red_700_color_code&quot;&gt;#d01716&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_red_800_color_code&quot;&gt;#c41411&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_red_900_color_code&quot;&gt;#b0120a&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_red_a100_color_code&quot;&gt;#ff7997&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_red_a200_color_code&quot;&gt;#ff5177&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_red_a400_color_code&quot;&gt;#ff2d6f&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_red_a700_color_code&quot;&gt;#e00032&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- pink --&gt;</span><br><span class="line">    &lt;color name=&quot;md_pink_50_color_code&quot;&gt;#fce4ec&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_pink_100_color_code&quot;&gt;#f8bbd0&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_pink_200_color_code&quot;&gt;#f48fb1&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_pink_300_color_code&quot;&gt;#f06292&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_pink_400_color_code&quot;&gt;#ec407a&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_pink_500_color_code&quot;&gt;#e91e63&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_pink_600_color_code&quot;&gt;#d81b60&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_pink_700_color_code&quot;&gt;#c2185b&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_pink_800_color_code&quot;&gt;#ad1457&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_pink_900_color_code&quot;&gt;#880e4f&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_pink_a100_color_code&quot;&gt;#ff80ab&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_pink_a200_color_code&quot;&gt;#ff4081&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_pink_a400_color_code&quot;&gt;#f50057&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_pink_a700_color_code&quot;&gt;#c51162&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- purple --&gt;</span><br><span class="line">    &lt;color name=&quot;md_purple_50_color_code&quot;&gt;#f3e5f5&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_purple_100_color_code&quot;&gt;#e1bee7&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_purple_200_color_code&quot;&gt;#ce93d8&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_purple_300_color_code&quot;&gt;#ba68c8&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_purple_400_color_code&quot;&gt;#ab47bc&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_purple_500_color_code&quot;&gt;#9c27b0&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_purple_600_color_code&quot;&gt;#8e24aa&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_purple_700_color_code&quot;&gt;#7b1fa2&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_purple_800_color_code&quot;&gt;#6a1b9a&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_purple_900_color_code&quot;&gt;#4a148c&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_purple_a100_color_code&quot;&gt;#ea80fc&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_purple_a200_color_code&quot;&gt;#e040fb&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_purple_a400_color_code&quot;&gt;#d500f9&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_purple_a700_color_code&quot;&gt;#aa00ff&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- deep_purple --&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_purple_50_color_code&quot;&gt;#ede7f6&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_purple_100_color_code&quot;&gt;#d1c4e9&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_purple_200_color_code&quot;&gt;#b39ddb&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_purple_300_color_code&quot;&gt;#9575cd&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_purple_400_color_code&quot;&gt;#7e57c2&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_purple_500_color_code&quot;&gt;#673ab7&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_purple_600_color_code&quot;&gt;#5e35b1&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_purple_700_color_code&quot;&gt;#512da8&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_purple_800_color_code&quot;&gt;#4527a0&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_purple_900_color_code&quot;&gt;#311b92&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_purple_a100_color_code&quot;&gt;#b388ff&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_purple_a200_color_code&quot;&gt;#7c4dff&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_purple_a400_color_code&quot;&gt;#651fff&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_purple_a700_color_code&quot;&gt;#6200ea&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- indigo --&gt;</span><br><span class="line">    &lt;color name=&quot;md_indigo_50_color_code&quot;&gt;#e8eaf6&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_indigo_100_color_code&quot;&gt;#c5cae9&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_indigo_200_color_code&quot;&gt;#9fa8da&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_indigo_300_color_code&quot;&gt;#7986cb&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_indigo_400_color_code&quot;&gt;#5c6bc0&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_indigo_500_color_code&quot;&gt;#3f51b5&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_indigo_600_color_code&quot;&gt;#3949ab&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_indigo_700_color_code&quot;&gt;#303f9f&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_indigo_800_color_code&quot;&gt;#283593&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_indigo_900_color_code&quot;&gt;#1a237e&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_indigo_a100_color_code&quot;&gt;#8c9eff&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_indigo_a200_color_code&quot;&gt;#536dfe&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_indigo_a400_color_code&quot;&gt;#3d5afe&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_indigo_a700_color_code&quot;&gt;#304ffe&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- blue --&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_50_color_code&quot;&gt;#e7e9fd&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_100_color_code&quot;&gt;#d0d9ff&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_200_color_code&quot;&gt;#afbfff&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_300_color_code&quot;&gt;#91a7ff&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_400_color_code&quot;&gt;#738ffe&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_500_color_code&quot;&gt;#5677fc&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_600_color_code&quot;&gt;#4e6cef&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_700_color_code&quot;&gt;#455ede&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_800_color_code&quot;&gt;#3b50ce&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_900_color_code&quot;&gt;#2a36b1&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_a100_color_code&quot;&gt;#a6baff&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_a200_color_code&quot;&gt;#6889ff&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_a400_color_code&quot;&gt;#4d73ff&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_a700_color_code&quot;&gt;#4d69ff&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- light_blue --&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_blue_50_color_code&quot;&gt;#e1f5fe&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_blue_100_color_code&quot;&gt;#b3e5fc&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_blue_200_color_code&quot;&gt;#81d4fa&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_blue_300_color_code&quot;&gt;#4fc3f7&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_blue_400_color_code&quot;&gt;#29b6f6&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_blue_500_color_code&quot;&gt;#03a9f4&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_blue_600_color_code&quot;&gt;#039be5&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_blue_700_color_code&quot;&gt;#0288d1&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_blue_800_color_code&quot;&gt;#0277bd&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_blue_900_color_code&quot;&gt;#01579b&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_blue_a100_color_code&quot;&gt;#80d8ff&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_blue_a200_color_code&quot;&gt;#40c4ff&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_blue_a400_color_code&quot;&gt;#00b0ff&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_blue_a700_color_code&quot;&gt;#0091ea&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- cyan --&gt;</span><br><span class="line">    &lt;color name=&quot;md_cyan_50_color_code&quot;&gt;#e0f7fa&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_cyan_100_color_code&quot;&gt;#b2ebf2&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_cyan_200_color_code&quot;&gt;#80deea&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_cyan_300_color_code&quot;&gt;#4dd0e1&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_cyan_400_color_code&quot;&gt;#26c6da&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_cyan_500_color_code&quot;&gt;#00bcd4&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_cyan_600_color_code&quot;&gt;#00acc1&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_cyan_700_color_code&quot;&gt;#0097a7&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_cyan_800_color_code&quot;&gt;#00838f&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_cyan_900_color_code&quot;&gt;#006064&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_cyan_a100_color_code&quot;&gt;#84ffff&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_cyan_a200_color_code&quot;&gt;#18ffff&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_cyan_a400_color_code&quot;&gt;#00e5ff&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_cyan_a700_color_code&quot;&gt;#00b8d4&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- teal --&gt;</span><br><span class="line">    &lt;color name=&quot;md_teal_50_color_code&quot;&gt;#e0f2f1&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_teal_100_color_code&quot;&gt;#b2dfdb&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_teal_200_color_code&quot;&gt;#80cbc4&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_teal_300_color_code&quot;&gt;#4db6ac&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_teal_400_color_code&quot;&gt;#26a69a&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_teal_500_color_code&quot;&gt;#009688&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_teal_600_color_code&quot;&gt;#00897b&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_teal_700_color_code&quot;&gt;#00796b&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_teal_800_color_code&quot;&gt;#00695c&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_teal_900_color_code&quot;&gt;#004d40&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_teal_a100_color_code&quot;&gt;#a7ffeb&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_teal_a200_color_code&quot;&gt;#64ffda&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_teal_a400_color_code&quot;&gt;#1de9b6&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_teal_a700_color_code&quot;&gt;#00bfa5&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- green --&gt;</span><br><span class="line">    &lt;color name=&quot;md_green_50_color_code&quot;&gt;#d0f8ce&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_green_100_color_code&quot;&gt;#a3e9a4&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_green_200_color_code&quot;&gt;#72d572&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_green_300_color_code&quot;&gt;#42bd41&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_green_400_color_code&quot;&gt;#2baf2b&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_green_500_color_code&quot;&gt;#259b24&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_green_600_color_code&quot;&gt;#0a8f08&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_green_700_color_code&quot;&gt;#0a7e07&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_green_800_color_code&quot;&gt;#056f00&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_green_900_color_code&quot;&gt;#0d5302&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_green_a100_color_code&quot;&gt;#a2f78d&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_green_a200_color_code&quot;&gt;#5af158&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_green_a400_color_code&quot;&gt;#14e715&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_green_a700_color_code&quot;&gt;#12c700&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- light_green --&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_green_50_color_code&quot;&gt;#f1f8e9&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_green_100_color_code&quot;&gt;#dcedc8&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_green_200_color_code&quot;&gt;#c5e1a5&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_green_300_color_code&quot;&gt;#aed581&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_green_400_color_code&quot;&gt;#9ccc65&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_green_500_color_code&quot;&gt;#8bc34a&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_green_600_color_code&quot;&gt;#7cb342&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_green_700_color_code&quot;&gt;#689f38&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_green_800_color_code&quot;&gt;#558b2f&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_green_900_color_code&quot;&gt;#33691e&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_green_a100_color_code&quot;&gt;#ccff90&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_green_a200_color_code&quot;&gt;#b2ff59&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_green_a400_color_code&quot;&gt;#76ff03&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_light_green_a700_color_code&quot;&gt;#64dd17&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- lime --&gt;</span><br><span class="line">    &lt;color name=&quot;md_lime_50_color_code&quot;&gt;#f9fbe7&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_lime_100_color_code&quot;&gt;#f0f4c3&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_lime_200_color_code&quot;&gt;#e6ee9c&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_lime_300_color_code&quot;&gt;#dce775&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_lime_400_color_code&quot;&gt;#d4e157&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_lime_500_color_code&quot;&gt;#cddc39&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_lime_600_color_code&quot;&gt;#c0ca33&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_lime_700_color_code&quot;&gt;#afb42b&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_lime_800_color_code&quot;&gt;#9e9d24&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_lime_900_color_code&quot;&gt;#827717&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_lime_a100_color_code&quot;&gt;#f4ff81&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_lime_a200_color_code&quot;&gt;#eeff41&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_lime_a400_color_code&quot;&gt;#c6ff00&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_lime_a700_color_code&quot;&gt;#aeea00&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- yellow --&gt;</span><br><span class="line">    &lt;color name=&quot;md_yellow_50_color_code&quot;&gt;#fffde7&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_yellow_100_color_code&quot;&gt;#fff9c4&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_yellow_200_color_code&quot;&gt;#fff59d&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_yellow_300_color_code&quot;&gt;#fff176&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_yellow_400_color_code&quot;&gt;#ffee58&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_yellow_500_color_code&quot;&gt;#ffeb3b&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_yellow_600_color_code&quot;&gt;#fdd835&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_yellow_700_color_code&quot;&gt;#fbc02d&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_yellow_800_color_code&quot;&gt;#f9a825&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_yellow_900_color_code&quot;&gt;#f57f17&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_yellow_a100_color_code&quot;&gt;#ffff8d&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_yellow_a200_color_code&quot;&gt;#ffff00&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_yellow_a400_color_code&quot;&gt;#ffea00&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_yellow_a700_color_code&quot;&gt;#ffd600&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- amber --&gt;</span><br><span class="line">    &lt;color name=&quot;md_amber_50_color_code&quot;&gt;#fff8e1&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_amber_100_color_code&quot;&gt;#ffecb3&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_amber_200_color_code&quot;&gt;#ffe082&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_amber_300_color_code&quot;&gt;#ffd54f&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_amber_400_color_code&quot;&gt;#ffca28&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_amber_500_color_code&quot;&gt;#ffc107&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_amber_600_color_code&quot;&gt;#ffb300&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_amber_700_color_code&quot;&gt;#ffa000&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_amber_800_color_code&quot;&gt;#ff8f00&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_amber_900_color_code&quot;&gt;#ff6f00&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_amber_a100_color_code&quot;&gt;#ffe57f&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_amber_a200_color_code&quot;&gt;#ffd740&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_amber_a400_color_code&quot;&gt;#ffc400&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_amber_a700_color_code&quot;&gt;#ffab00&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- orange --&gt;</span><br><span class="line">    &lt;color name=&quot;md_orange_50_color_code&quot;&gt;#fff3e0&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_orange_100_color_code&quot;&gt;#ffe0b2&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_orange_200_color_code&quot;&gt;#ffcc80&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_orange_300_color_code&quot;&gt;#ffb74d&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_orange_400_color_code&quot;&gt;#ffa726&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_orange_500_color_code&quot;&gt;#ff9800&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_orange_600_color_code&quot;&gt;#fb8c00&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_orange_700_color_code&quot;&gt;#f57c00&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_orange_800_color_code&quot;&gt;#ef6c00&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_orange_900_color_code&quot;&gt;#e65100&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_orange_a100_color_code&quot;&gt;#ffd180&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_orange_a200_color_code&quot;&gt;#ffab40&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_orange_a400_color_code&quot;&gt;#ff9100&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_orange_a700_color_code&quot;&gt;#ff6d00&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- deep_orange --&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_orange_50_color_code&quot;&gt;#fbe9e7&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_orange_100_color_code&quot;&gt;#ffccbc&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_orange_200_color_code&quot;&gt;#ffab91&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_orange_300_color_code&quot;&gt;#ff8a65&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_orange_400_color_code&quot;&gt;#ff7043&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_orange_500_color_code&quot;&gt;#ff5722&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_orange_600_color_code&quot;&gt;#f4511e&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_orange_700_color_code&quot;&gt;#e64a19&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_orange_800_color_code&quot;&gt;#d84315&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_orange_900_color_code&quot;&gt;#bf360c&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_orange_a100_color_code&quot;&gt;#ff9e80&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_orange_a200_color_code&quot;&gt;#ff6e40&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_orange_a400_color_code&quot;&gt;#ff3d00&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_deep_orange_a700_color_code&quot;&gt;#dd2c00&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- brown --&gt;</span><br><span class="line">    &lt;color name=&quot;md_brown_50_color_code&quot;&gt;#efebe9&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_brown_100_color_code&quot;&gt;#d7ccc8&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_brown_200_color_code&quot;&gt;#bcaaa4&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_brown_300_color_code&quot;&gt;#a1887f&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_brown_400_color_code&quot;&gt;#8d6e63&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_brown_500_color_code&quot;&gt;#795548&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_brown_600_color_code&quot;&gt;#6d4c41&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_brown_700_color_code&quot;&gt;#5d4037&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_brown_800_color_code&quot;&gt;#4e342e&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_brown_900_color_code&quot;&gt;#3e2723&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- grey --&gt;</span><br><span class="line">    &lt;color name=&quot;md_grey_50_color_code&quot;&gt;#fafafa&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_grey_100_color_code&quot;&gt;#f5f5f5&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_grey_200_color_code&quot;&gt;#eeeeee&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_grey_300_color_code&quot;&gt;#e0e0e0&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_grey_400_color_code&quot;&gt;#bdbdbd&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_grey_500_color_code&quot;&gt;#9e9e9e&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_grey_600_color_code&quot;&gt;#757575&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_grey_700_color_code&quot;&gt;#616161&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_grey_800_color_code&quot;&gt;#424242&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_grey_900_color_code&quot;&gt;#212121&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_black_color_code&quot;&gt;#000000&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_white_color_code&quot;&gt;#ffffff&lt;/color&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- blue_grey --&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_grey_50_color_code&quot;&gt;#eceff1&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_grey_100_color_code&quot;&gt;#cfd8dc&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_grey_200_color_code&quot;&gt;#b0bec5&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_grey_300_color_code&quot;&gt;#90a4ae&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_grey_400_color_code&quot;&gt;#78909c&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_grey_500_color_code&quot;&gt;#607d8b&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_grey_600_color_code&quot;&gt;#546e7a&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_grey_700_color_code&quot;&gt;#455a64&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_grey_800_color_code&quot;&gt;#37474f&lt;/color&gt;</span><br><span class="line">    &lt;color name=&quot;md_blue_grey_900_color_code&quot;&gt;#263238&lt;/color&gt;</span><br><span class="line">&lt;resources&gt;</span><br></pre></td></tr></table></figure>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/01/28/音乐信息悬浮窗/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/01/28/WP对话框/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Peter1303's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        peter13034@outlook.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto:peter13034@outlook.com" target="_blank" title="联系我">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        联系我
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">16</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/使用体验/">使用体验<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/分享/">分享<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/开源/">开源<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/技术/">技术<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/电脑软件/">电脑软件<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/自语/">自语<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/软件/">软件<span class="sidebar_archives-count">4</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/tags" title="标签">
+                
+                    <i class="material-icons sidebar-material-icons">bookmark</i>
+                
+                标签
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/timeline" title="往历">
+                
+                    <i class="material-icons sidebar-material-icons">timeline</i>
+                
+                往历
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+        <li>
+            <a href="/gallery" title="图库">
+                
+                    <i class="material-icons sidebar-material-icons">photo</i>
+                
+                图库
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/links" title="友链">
+                
+                    <i class="material-icons sidebar-material-icons">link</i>
+                
+                友链
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="http://www.coolapk.com/u/461573" title="酷安">
+                
+                    <i class="material-icons sidebar-material-icons">shop</i>
+                
+                酷安
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="关于">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/Peter1303496508" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+        <a href="https://plus.google.com/u/0/100937383762607051770" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+        <a href="https://weibo.com/u/2690949517?is_all=1" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-weibo">
+                <span class="visuallyhidden">Weibo</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/Peter1303" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;2018&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Peter1303
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
