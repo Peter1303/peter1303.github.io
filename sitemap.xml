@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://peter1303.github.io/2018/01/28/SharedPreferencesHelper/</loc>
+    
+    <lastmod>2018-01-31T09:39:38.639Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://peter1303.github.io/2018/01/29/%E8%BF%9E%E6%8E%A5%E7%BD%91%E7%AB%99%E7%9A%84%E8%BF%87%E7%A8%8B/</loc>
     
     <lastmod>2018-01-30T16:47:00.224Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://peter1303.github.io/2018/01/28/WP%E5%AF%B9%E8%AF%9D%E6%A1%86/</loc>
     
     <lastmod>2018-01-30T16:43:39.124Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://peter1303.github.io/2018/01/28/SharedPreferencesHelper/</loc>
-    
-    <lastmod>2018-01-30T16:43:09.205Z</lastmod>
     
   </url>
   

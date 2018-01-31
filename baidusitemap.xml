@@ -4,6 +4,31 @@
 
     
   <url>
+    <loc>https://peter1303.github.io/2018/01/28/SharedPreferencesHelper/</loc>
+    <lastmod>2018-01-31T09:39:38.639Z</lastmod>
+    <data>
+        <display>
+        <title>SharedPreferencesHelper</title>
+        <pubTime>2018-01-28T15:34:15.000Z</pubTime>
+        
+        <tag>开发</tag>
+         
+        <tag>开源</tag>
+         
+         
+           
+             
+              <breadCrumb title="开源" url="https://peter1303.github.io/categories/%E5%BC%80%E6%BA%90/"/>
+          
+             
+              <breadCrumb title="开发" url="https://peter1303.github.io/categories/%E5%BC%80%E6%BA%90/%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://peter1303.github.io/2018/01/29/%E8%BF%9E%E6%8E%A5%E7%BD%91%E7%AB%99%E7%9A%84%E8%BF%87%E7%A8%8B/</loc>
     <lastmod>2018-01-30T16:47:00.224Z</lastmod>
     <data>
@@ -101,34 +126,9 @@
         <title>WP对话框</title>
         <pubTime>2018-01-28T15:53:36.000Z</pubTime>
         
-        <tag>开源</tag>
-         
         <tag>开发</tag>
          
-         
-           
-             
-              <breadCrumb title="开源" url="https://peter1303.github.io/categories/%E5%BC%80%E6%BA%90/"/>
-          
-             
-              <breadCrumb title="开发" url="https://peter1303.github.io/categories/%E5%BC%80%E6%BA%90/%E5%BC%80%E5%8F%91/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://peter1303.github.io/2018/01/28/SharedPreferencesHelper/</loc>
-    <lastmod>2018-01-30T16:43:09.205Z</lastmod>
-    <data>
-        <display>
-        <title>SharedPreferencesHelper</title>
-        <pubTime>2018-01-28T15:34:15.000Z</pubTime>
-        
         <tag>开源</tag>
-         
-        <tag>开发</tag>
          
          
            
@@ -151,9 +151,9 @@
         <title>Material Design配色</title>
         <pubTime>2018-01-28T15:59:09.000Z</pubTime>
         
-        <tag>开发</tag>
-         
         <tag>Android</tag>
+         
+        <tag>开发</tag>
          
          
            
