@@ -254,7 +254,7 @@
 
     
         <meta property="article:published_time" content="Thu Feb 01 2018 12:16:03 GMT+0800">
-        <meta property="article:modified_time" content="Thu Feb 01 2018 18:03:52 GMT+0800">
+        <meta property="article:modified_time" content="Thu Feb 01 2018 18:46:20 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -277,7 +277,7 @@
     "mainEntityOfPage": "https://peter1303.github.io/2018/02/01/Android开发中打开支付宝支付/index.html",
     "headline": "Android开发中打开支付宝支付",
     "datePublished": "Thu Feb 01 2018 12:16:03 GMT+0800",
-    "dateModified": "Thu Feb 01 2018 18:03:52 GMT+0800",
+    "dateModified": "Thu Feb 01 2018 18:46:20 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Peter1303",
@@ -525,12 +525,12 @@
 <p>相信各位开发者都知道支付宝支付吧？在此之前我只知道支付宝支付是需要使用到 <strong>支付宝SDK</strong>（<a href="https://docs.open.alipay.com/api" target="_blank" rel="noopener">详细官方文档</a>）。<br>但是有的时候只是用支付宝为增加捐献这一简简单单的功能时怎么办？用 <strong>SDK</strong> 未免大材小用了吧？如果我们做的是小应用的话还会增加应用的体积。<br>试了一下从网上查资料，没有一个不是使用 <strong>SDK</strong> 的资料😡。<br>但是我在某一个小众软件中发现捐献这一功能，点击之后直接调用支付宝打开支付界面（给 XXX 捐献），因此我猜想这一定是使用了 <strong>Intent</strong> 来唤起支付的，所以我就开始研究如何做到的。</p>
 <hr>
 <h2 id="开始搞事情"><a href="#开始搞事情" class="headerlink" title="开始搞事情"></a>开始搞事情</h2><p>由于一些失误导致了软件没了，我也没有想起软件的名字。所以反编译是不行了。<br>所以…我开始从支付链接入手。</p>
-<p>我的支付链接是：<a href="https://qr.alipay.com/tsx03571a1zhkbgkmqxnb9e" target="_blank" rel="noopener">https://qr.alipay.com/tsx03571a1zhkbgkmqxnb9e</a></p>
-<p>接着返回这一链接：<a href="https://ds.alipay.com/?from=mobilecodec&amp;scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252Ftsx03571a1zhkbgkmqxnb9e%253F_s%253Dweb-other" target="_blank" rel="noopener">https://ds.alipay.com/?from=mobilecodec&amp;scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252Ftsx03571a1zhkbgkmqxnb9e%253F_s%253Dweb-other</a></p>
+<p>我的支付链接是：<br><a href="https://qr.alipay.com/tsx03571a1zhkbgkmqxnb9e" target="_blank" rel="noopener">https://qr.alipay.com/tsx03571a1zhkbgkmqxnb9e</a></p>
+<p>接着返回这一链接：<br><a href="https://ds.alipay.com/?from=mobilecodec&amp;scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252Ftsx03571a1zhkbgkmqxnb9e%253F_s%253Dweb-other" target="_blank" rel="noopener">https://ds.alipay.com/?from=mobilecodec&amp;scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252Ftsx03571a1zhkbgkmqxnb9e%253F_s%253Dweb-other</a></p>
 <p>用 <strong>F12</strong> 打开开发者工具查看，然后我就找到了这一元素：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;actions&quot;&gt;</span><br><span class="line">&lt;a class=&quot;download&quot;&gt;下载支付宝&lt;/a&gt;</span><br><span class="line">&lt;p class=&quot;tip&quot;&gt;</span><br><span class="line">&quot;QQ浏览器不支持打开支付宝&quot;</span><br><span class="line">&lt;br&gt;</span><br><span class="line">&quot;请使用其他浏览器&quot;</span><br><span class="line">&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
 <p>本想着会有用 <strong>schema</strong> 唤起应用的，没想到还有脚本。懒得再去分析脚本。难道就这样放弃吗？</p>
 <hr>
-<h2 id="事情发生了转机"><a href="#事情发生了转机" class="headerlink" title="事情发生了转机"></a>事情发生了转机</h2><p>当我毫无头绪的时候，突然发现了链接有唤起支付的 <strong>schema</strong>！<br>请仔细看 <strong>from</strong> 后的链接：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://ds.alipay.com/?from=mobilecodec&amp;scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252Ftsx03571a1zhkbgkmqxnb9e%253F_s%253Dweb-other</span><br></pre></td></tr></table></figure></p>
+<h2 id="事情发生了转机"><a href="#事情发生了转机" class="headerlink" title="事情发生了转机"></a>事情发生了转机</h2><p>当我毫无头绪的时候，仔细研究突然发现了链接有唤起支付的 <strong>schema</strong>！<br>请仔细看 <strong>from</strong> 后的链接：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://ds.alipay.com/?from=mobilecodec&amp;scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252Ftsx03571a1zhkbgkmqxnb9e%253F_s%253Dweb-other</span><br></pre></td></tr></table></figure></p>
 <p>仔细看的话就可以发现了：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252Ftsx03571a1zhkbgkmqxnb9e%253F_s%253Dweb-other</span><br></pre></td></tr></table></figure></p>
 <p>这一个就是了！</p>
 <hr>
