@@ -4,6 +4,59 @@
 
     
   <url>
+    <loc>https://peter1303.github.io/2018/02/01/Android%E5%BC%80%E5%8F%91%E4%B8%AD%E6%89%93%E5%BC%80%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%AF%E4%BB%98/</loc>
+    <lastmod>2018-02-01T10:03:52.663Z</lastmod>
+    <data>
+        <display>
+        <title>Android开发中打开支付宝支付</title>
+        <pubTime>2018-02-01T04:16:03.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+        <tag>开发</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://peter1303.github.io/categories/Android/"/>
+          
+             
+              <breadCrumb title="开发" url="https://peter1303.github.io/categories/Android/%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+  <url>
+    <loc>https://peter1303.github.io/2018/01/30/%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84%E2%80%9C%E9%BB%91%E7%A7%91%E6%8A%80%E2%80%9D%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2018-02-01T07:24:39.675Z</lastmod>
+    <data>
+        <display>
+        <title>电脑上的“黑科技”软件</title>
+        <pubTime>2018-01-30T05:53:23.000Z</pubTime>
+        
+        <tag>黑科技</tag>
+         
+        <tag>电脑软件</tag>
+         
+         
+           
+             
+              <breadCrumb title="电脑软件" url="https://peter1303.github.io/categories/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/"/>
+          
+             
+              <breadCrumb title="黑科技" url="https://peter1303.github.io/categories/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/%E9%BB%91%E7%A7%91%E6%8A%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://peter1303.github.io/2018/01/28/SharedPreferencesHelper/</loc>
     <lastmod>2018-01-31T09:39:38.639Z</lastmod>
     <data>
@@ -62,56 +115,6 @@
            
              
               <breadCrumb title="涨知识" url="https://peter1303.github.io/categories/%E6%B6%A8%E7%9F%A5%E8%AF%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://peter1303.github.io/2018/01/30/%E8%AF%B4%E8%AF%B4%E7%94%A8-Hxeo-%E5%92%8C-WordPress-%E7%9A%84%E7%BB%8F%E5%8E%86/</loc>
-    <lastmod>2018-01-30T16:45:57.172Z</lastmod>
-    <data>
-        <display>
-        <title>说说用 Hxeo 和 WordPress 的经历</title>
-        <pubTime>2018-01-30T05:49:53.000Z</pubTime>
-        
-        <tag>闲聊</tag>
-         
-        <tag>使用体验</tag>
-         
-         
-           
-             
-              <breadCrumb title="闲聊" url="https://peter1303.github.io/categories/%E9%97%B2%E8%81%8A/"/>
-          
-             
-              <breadCrumb title="使用体验" url="https://peter1303.github.io/categories/%E9%97%B2%E8%81%8A/%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://peter1303.github.io/2018/01/30/%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84%E2%80%9C%E9%BB%91%E7%A7%91%E6%8A%80%E2%80%9D%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2018-01-30T16:44:30.619Z</lastmod>
-    <data>
-        <display>
-        <title>电脑上的“黑科技”软件</title>
-        <pubTime>2018-01-30T05:53:23.000Z</pubTime>
-        
-        <tag>黑科技</tag>
-         
-        <tag>电脑软件</tag>
-         
-         
-           
-             
-              <breadCrumb title="电脑软件" url="https://peter1303.github.io/categories/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/"/>
-          
-             
-              <breadCrumb title="黑科技" url="https://peter1303.github.io/categories/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/%E9%BB%91%E7%A7%91%E6%8A%80/"/>
           
         </display>
     </data>
@@ -213,7 +216,6 @@
     </url>
 
     
-    
   <url>
     <loc>https://peter1303.github.io/2018/01/29/%E4%BA%8C%E7%BB%B4%E7%A0%81/</loc>
     <lastmod>2018-01-30T07:39:58.886Z</lastmod>
@@ -273,7 +275,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>https://peter1303.github.io/2018/01/29/WIFI%E5%AF%86%E7%A0%81/</loc>

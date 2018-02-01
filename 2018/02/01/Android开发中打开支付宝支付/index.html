@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html style="display: none;" lang="zh">
+    
+    
     <head>
     <meta charset="utf-8">
     <!--
@@ -47,7 +49,7 @@
     
     <title>
         
-            说说用 Hxeo 和 WordPress 的经历 | 
+            Android开发中打开支付宝支付 | 
         
         Peter1303&#39;s Blog
     </title>
@@ -58,7 +60,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="分享我的生活点点滴滴">
-    <meta name="keywords" content=",闲聊,使用体验">
+    <meta name="keywords" content=",Android,开发">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -224,7 +226,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Peter1303&#39;s Blog">
-    <meta name="msapplication-starturl" content="https://peter1303.github.io/2018/01/30/说说用-Hxeo-和-WordPress-的经历/">
+    <meta name="msapplication-starturl" content="https://peter1303.github.io/2018/02/01/Android开发中打开支付宝支付/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Peter1303&#39;s Blog">
@@ -243,16 +245,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://peter1303.github.io/2018/01/30/说说用-Hxeo-和-WordPress-的经历/">
+    <meta property="og:url" content="https://peter1303.github.io/2018/02/01/Android开发中打开支付宝支付/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="说说用 Hxeo 和 WordPress 的经历 | Peter1303&#39;s Blog">
+    <meta property="og:title" content="Android开发中打开支付宝支付 | Peter1303&#39;s Blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="分享我的生活点点滴滴">
-    <meta property="og:article:tag" content="闲聊"> <meta property="og:article:tag" content="使用体验"> 
+    <meta property="og:article:tag" content="Android"> <meta property="og:article:tag" content="开发"> 
 
     
-        <meta property="article:published_time" content="Tue Jan 30 2018 13:49:53 GMT+0800">
-        <meta property="article:modified_time" content="Wed Jan 31 2018 00:45:57 GMT+0800">
+        <meta property="article:published_time" content="Thu Feb 01 2018 12:16:03 GMT+0800">
+        <meta property="article:modified_time" content="Thu Feb 01 2018 18:03:52 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -260,7 +262,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://peter1303.github.io/2018/01/30/说说用-Hxeo-和-WordPress-的经历/index.html" />
+        <link rel="canonical" href="https://peter1303.github.io/2018/02/01/Android开发中打开支付宝支付/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -272,10 +274,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://peter1303.github.io/2018/01/30/说说用-Hxeo-和-WordPress-的经历/index.html",
-    "headline": "说说用 Hxeo 和 WordPress 的经历",
-    "datePublished": "Tue Jan 30 2018 13:49:53 GMT+0800",
-    "dateModified": "Wed Jan 31 2018 00:45:57 GMT+0800",
+    "mainEntityOfPage": "https://peter1303.github.io/2018/02/01/Android开发中打开支付宝支付/index.html",
+    "headline": "Android开发中打开支付宝支付",
+    "datePublished": "Thu Feb 01 2018 12:16:03 GMT+0800",
+    "dateModified": "Thu Feb 01 2018 18:03:52 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Peter1303",
@@ -293,7 +295,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",闲聊,使用体验",
+    "keywords": ",Android,开发",
     "description": "分享我的生活点点滴滴",
 }
 </script>
@@ -353,6 +355,15 @@
     <!-- Left aligned menu below button -->
     
     
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#开始搞事情"><span class="post-toc-number">1.</span> <span class="post-toc-text">开始搞事情</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#事情发生了转机"><span class="post-toc-number">2.</span> <span class="post-toc-text">事情发生了转机</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#搞事成功"><span class="post-toc-number">3.</span> <span class="post-toc-text">搞事成功</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#最后"><span class="post-toc-number">4.</span> <span class="post-toc-text">最后</span></a></li></ol>
+    </ul>
+    
 
 
 
@@ -382,7 +393,7 @@
         
     
             <p class="article-headline-p">
-                说说用 Hxeo 和 WordPress 的经历
+                Android开发中打开支付宝支付
             </p>
         </div>
 
@@ -401,7 +412,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Peter1303</strong>
-        <span>1月 30, 2018</span>
+        <span>2月 01, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -423,7 +434,7 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
     <li class="mdl-menu__item">在其它设备中阅读本文章</li>
     
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAADlklEQVR42u3aQW4jMQwEwPz/07vXANnY3aSUzAI1J8MY26PSgWaLH39cn64PBDhw4MCBAwcOHDhwPJjjI76+3v/5nX/8zJf3v372u2f49tG/+exsLThw4MCB4x7Hm1L0kuP1gluCU68LUBw4cODAcY0jecTZYjZFcVbyi7XgwIEDB45f5UgatvyenD6K+XDgwIEDx3/I8fpR2rI3i/8e978DBw4cOHAswsEZ3D7ySw6xfiErxYEDBw4chwYanvz6F+Y7cODAgQPH4mrJZkdQswZvuCIcOHDgwHGUI4nbXjdRSfOWtHazw6TZCAUOHDhw4LjHsVlAzjdrDpNQMg8NceDAgQPHz3DkC9i0W0kZzg+Q2rL9ZoNx4MCBA8c1jrxctUc+7QbkWO1WFYUWBw4cOHAsOPIClrRh+eHQfmShbTLrYyccOHDgwLHmaB8xb8w2LVwbOxajFThw4MCB4wJHXj7bwrxpFPNxivZXcODAgQPHbY59WzUbSsibtM3rNwMcOHDgwIHjKEdUisqBg1lrl7PmEWG0PThw4MCB4wJHG+3VAdwo+Mu/bbNVOHDgwIHjHscsvDvb/uVhZVtWo3AQBw4cOHCsOfblbT8210K0hblo4XDgwIEDxyGOU/Fc27zNjp3y46uICQcOHDhwXObYBHmzb27jyMOFHwcOHDhwHOVoW6nNoVFyINQ+Q97mDbNSHDhw4MBRcuSN0KwcFiHdaAOSov6mYOPAgQMHjgscyQJmkd+mNCaIs7KNAwcOHDjuceSjZm1EuD8Q2ow7FHEnDhw4cOA4yjFrh9rGLy+WbdQ4ux8HDhw4cNzjaItiMujwZ3TVgwgv78eBAwcOHE/g2Iyp5WWyLc/JBuS/hQMHDhw4nsDRjh3k8VxbVvO/AsWhGg4cOHDgOMrRHhrN2rC2PM+OmobDczhw4MCB4yhHTtCGhptl5M1k8nehHpXDgQMHDhxrjnYUYNaSbcLB9vtXhRYHDhw4cKw52rGDlqyI6kZt3mbkAgcOHDhwnOXYh3H7UbY2oGzL9pvijQMHDhw4LnCcKn55AzZruopF5tuGAwcOHDiuccyW14Z0yUPPjprywo8DBw4cOJ7DkY/B5UMMmzKffGrYwuHAgQMHjh/n2C8pv2cWAkYbiQMHDhw4rnHkRStvpdpvzt95xLETDhw4cOA4NNAwC/tmAxNtKNluKg4cOHDgOMvhwoEDBw4cOHDgwIEDx8Ouv4SgQ5QsNqomAAAAAElFTkSuQmCC">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAADiElEQVR42u3ay5KbUAwFQP//TyfbqUpgjqQrhlSalQtjjNoLWY/PL8eX44MABw4cOHDgwIEDB44Xc3zi4+r65G5f3726/s9rrq6//2weCw4cOHDg2OP4JhUFX3mPdR/kVXg5Si8WHDhw4MCxzZEHc3/mPvUmn0qYEpoo2ePAgQMHjh/liNptcZmXl23J9Thw4MCB41/kyJt3SUjVJJqcwYEDBw4c7+EoNNSKg6jeUGpSzj3UK8WBAwcOHIcWGt78+gf2O3DgwIEDx/ioPly+spCMoyaNy7/cDQcOHDhwHOXIF6nzYVL1s1WseemIAwcOHDj2OPL0Vh01JQ3B3gCp1yK8PI8DBw4cONY4egVbvu6QYx0u0u6jw4EDBw4cRzl6A6dqik0gcrKk+VhoTeLAgQMHjsc58uWG5FHypJ6c6aV2HDhw4MCxzZGkyV46rA6BemsNOQ0OHDhw4NjmqJZbk6+frET0moxRdDhw4MCBY4Gj17YbrREUR1aTxuU3V+LAgQMHjqMc+a17Lb88AfcSZ/7t5bETDhw4cOBocUzWEfJSbS+wvCC8jBQHDhw4cBzlqDb+JoOo6sCp2hZMzpT/d+DAgQMHjkMcc4heQZi87pWOOHDgwIHjSY68oTZZg8vPVK/srTLgwIEDB44NjnzYUx0I5Qm7tzyRPGF0Nxw4cODAcZQjb9JN1hp6JVz+81RXNHDgwIEDxx5HQjNpAvaSXzWw0dIeDhw4cOBY4Kim2+oQKEefLEw0m4w4cODAgWONo1z8FB9ojj5PsThw4MCBY5uj1/6rDpbOlmTzd3HgwIEDxzZH3uC7DyxB6d2h+tn8njhw4MCBY4NjkrqS9YJq2y6nrD5PtN+BAwcOHDgOcZRTVHFhrhpkdQGiOnDCgQMHDhxPcuTpMy+0ekOparqtjtBw4MCBA8eTHBtNvSp0Hl418ePAgQMHjm2OU0sJvUef/zzVWHDgwIEDxwbHqdbbRprsrUqMEi0OHDhw4BhzfOIjH1P1wo5GRMU/BNEPjAMHDhw4FjiS5JoPh/IliTlTL+XjwIEDB45nOPLm2nx1O0/keeLP/y7gwIEDB443cyRJdE6QtynLZSEOHDhw4PhRjt5XJsVhvgyRXF+IBQcOHDhwrHHkD52086oLcHvrejhw4MCB43mO+UJD/tCnSrhX73fgwIEDx3/M4cCBAwcOHDhw4MCBA8fLjt/+wr9QxIC0mQAAAABJRU5ErkJggg==">
     
 </ul>
 
@@ -437,7 +448,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/使用体验/">使用体验</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/闲聊/">闲聊</a>
+        <a class="post_tag-link" href="/tags/Android/">Android</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/开发/">开发</a>
     </ul>
     
 
@@ -456,7 +467,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=说说用 Hxeo 和 WordPress 的经历&url=https://peter1303.github.io/2018/01/30/说说用-Hxeo-和-WordPress-的经历/index.html&pic=https://peter1303.github.io/img/avatar.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Android开发中打开支付宝支付&url=https://peter1303.github.io/2018/02/01/Android开发中打开支付宝支付/index.html&pic=https://peter1303.github.io/img/avatar.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -465,7 +476,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=说说用 Hxeo 和 WordPress 的经历&url=https://peter1303.github.io/2018/01/30/说说用-Hxeo-和-WordPress-的经历/index.html&via=Peter1303" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Android开发中打开支付宝支付&url=https://peter1303.github.io/2018/02/01/Android开发中打开支付宝支付/index.html&via=Peter1303" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -477,7 +488,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://peter1303.github.io/2018/01/30/说说用-Hxeo-和-WordPress-的经历/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://peter1303.github.io/2018/02/01/Android开发中打开支付宝支付/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -489,7 +500,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Peter1303&#39;s Blog&title=说说用 Hxeo 和 WordPress 的经历&summary=分享我的生活点点滴滴&pics=https://peter1303.github.io/img/avatar.png&url=https://peter1303.github.io/2018/01/30/说说用-Hxeo-和-WordPress-的经历/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Peter1303&#39;s Blog&title=Android开发中打开支付宝支付&summary=分享我的生活点点滴滴&pics=https://peter1303.github.io/img/avatar.png&url=https://peter1303.github.io/2018/02/01/Android开发中打开支付宝支付/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -508,7 +519,26 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>等我写好 (/▽＼)</p>
+        <blockquote>
+<p>版权声明：个人原创，转载请声明原作者和来源！</p>
+</blockquote>
+<p>相信各位开发者都知道支付宝支付吧？在此之前我只知道支付宝支付是需要使用到 <strong>支付宝SDK</strong>（<a href="https://docs.open.alipay.com/api" target="_blank" rel="noopener">详细官方文档</a>）。<br>但是有的时候只是用支付宝为增加捐献这一简简单单的功能时怎么办？用 <strong>SDK</strong> 未免大材小用了吧？如果我们做的是小应用的话还会增加应用的体积。<br>试了一下从网上查资料，没有一个不是使用 <strong>SDK</strong> 的资料😡。<br>但是我在某一个小众软件中发现捐献这一功能，点击之后直接调用支付宝打开支付界面（给 XXX 捐献），因此我猜想这一定是使用了 <strong>Intent</strong> 来唤起支付的，所以我就开始研究如何做到的。</p>
+<hr>
+<h2 id="开始搞事情"><a href="#开始搞事情" class="headerlink" title="开始搞事情"></a>开始搞事情</h2><p>由于一些失误导致了软件没了，我也没有想起软件的名字。所以反编译是不行了。<br>所以…我开始从支付链接入手。</p>
+<p>我的支付链接是：<a href="https://qr.alipay.com/tsx03571a1zhkbgkmqxnb9e" target="_blank" rel="noopener">https://qr.alipay.com/tsx03571a1zhkbgkmqxnb9e</a></p>
+<p>接着返回这一链接：<a href="https://ds.alipay.com/?from=mobilecodec&amp;scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252Ftsx03571a1zhkbgkmqxnb9e%253F_s%253Dweb-other" target="_blank" rel="noopener">https://ds.alipay.com/?from=mobilecodec&amp;scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252Ftsx03571a1zhkbgkmqxnb9e%253F_s%253Dweb-other</a></p>
+<p>用 <strong>F12</strong> 打开开发者工具查看，然后我就找到了这一元素：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;actions&quot;&gt;</span><br><span class="line">&lt;a class=&quot;download&quot;&gt;下载支付宝&lt;/a&gt;</span><br><span class="line">&lt;p class=&quot;tip&quot;&gt;</span><br><span class="line">&quot;QQ浏览器不支持打开支付宝&quot;</span><br><span class="line">&lt;br&gt;</span><br><span class="line">&quot;请使用其他浏览器&quot;</span><br><span class="line">&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>本想着会有用 <strong>schema</strong> 唤起应用的，没想到还有脚本。懒得再去分析脚本。难道就这样放弃吗？</p>
+<hr>
+<h2 id="事情发生了转机"><a href="#事情发生了转机" class="headerlink" title="事情发生了转机"></a>事情发生了转机</h2><p>当我毫无头绪的时候，突然发现了链接有唤起支付的 <strong>schema</strong>！<br>请仔细看 <strong>from</strong> 后的链接：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://ds.alipay.com/?from=mobilecodec&amp;scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252Ftsx03571a1zhkbgkmqxnb9e%253F_s%253Dweb-other</span><br></pre></td></tr></table></figure></p>
+<p>仔细看的话就可以发现了：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252Ftsx03571a1zhkbgkmqxnb9e%253F_s%253Dweb-other</span><br></pre></td></tr></table></figure></p>
+<p>这一个就是了！</p>
+<hr>
+<h2 id="搞事成功"><a href="#搞事成功" class="headerlink" title="搞事成功"></a>搞事成功</h2><p>既然找到了实现起来就容易了：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">String ali = &quot;alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252Ftsx03571a1zhkbgkmqxnb9e%253F_s%253Dweb-other&quot;；</span><br><span class="line">Uri uri = Uri.parse(ali);</span><br><span class="line">Intent intent = new Intent(Intent.ACTION_VIEW, uri);</span><br><span class="line">startActivity(intent);</span><br><span class="line">&#125; catch (Exception e) &#123;</span><br><span class="line">   //一般发生错误可能是用户没有安装 支付宝？</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>如果不喜欢唤起的 <strong>schema</strong> 太长的话，我们还可以进行 <strong>url</strong> 的转换：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alipays://platformapi/startapp?saId=10000007&amp;clientVersion=3.7.0.0718&amp;qrcode=https%3A%2F%http://2fqr.alipay.com/%2Ftsx03571a1zhkbgkmqxnb9e%3F_s%3Dweb-other</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>想信大家如果知道了这种方法再也不用用程序复制到用户的手机剪切板和扫描二维码等方式进行扫码支付了。即可以节省二维码图片的占用也不用用户手动打开支付宝支付了（轻松了很多有木有？）<br>再向前想就可以用这个用来唤起用户的支付宝来领取红包的 (❤ ω ❤)</p>
 
         
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
@@ -517,7 +547,7 @@
                             博客使用：<a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported</a> 协议进行许可
                         </strong>
                         <br>
-                        <strong>本文链接：</strong><a href="https://peter1303.github.io/2018/01/30/说说用-Hxeo-和-WordPress-的经历/">https://peter1303.github.io/2018/01/30/说说用-Hxeo-和-WordPress-的经历/</a>
+                        <strong>本文链接：</strong><a href="https://peter1303.github.io/2018/02/01/Android开发中打开支付宝支付/">https://peter1303.github.io/2018/02/01/Android开发中打开支付宝支付/</a>
                     </p>
                 </blockquote>
         
@@ -562,21 +592,13 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2018/01/30/电脑上的“黑科技”软件/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2018/01/29/中奖啦/" id="post_nav-older" class="next-content">
+        <a href="/2018/01/30/电脑上的“黑科技”软件/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
@@ -668,7 +690,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">16</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">15</span></a>
             </ul>
         </li>
         
@@ -686,7 +708,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/分享/">分享<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/开发/">开发<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/开发/Android/">Android<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/开源/">开源<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/开源/开发/">开发<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/技术/">技术<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/涨知识/">涨知识<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/电脑软件/">电脑软件<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/电脑软件/黑科技/">黑科技<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/自语/">自语<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/软件/">软件<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/软件/开源/">开源<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/闲聊/">闲聊<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/闲聊/使用体验/">使用体验<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/Android/">Android<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Android/开发/">开发<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/分享/">分享<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/开发/">开发<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/开发/Android/">Android<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/开源/">开源<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/开源/开发/">开发<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/技术/">技术<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/涨知识/">涨知识<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/电脑软件/">电脑软件<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/电脑软件/黑科技/">黑科技<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/自语/">自语<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/软件/">软件<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/软件/开源/">开源<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -887,7 +909,28 @@ It will not impact the appearance and can give developers a lot of support :)
         <div id="copyright">
             Copyright&nbsp;©&nbsp;2018&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Peter1303's Blog
             
-            <div>您是第 <span id="busuanzi_value_site_uv"></span> 个小伙伴</div>
+            <div><span id="span_dt_dt"> </span>
+                <script language="javascript">
+                    function show_date_time(){
+                        window.setTimeout("show_date_time()", 1000);
+                        BirthDay=new Date("1/31/2018 00:23:08");//这个日期是可以修改的
+                        today = new Date();
+                        timeold = (today.getTime() - BirthDay.getTime());//其实仅仅改了这里
+                        sectimeold = timeold/1000
+                        secondsold = Math.floor(sectimeold);
+                        msPerDay = 24*60*60*1000
+                        e_daysold = timeold/msPerDay
+                        daysold = Math.floor(e_daysold);
+                        e_hrsold = (e_daysold-daysold)*24;
+                        hrsold = Math.floor(e_hrsold);
+                        e_minsold = (e_hrsold-hrsold)*60;
+                        minsold = Math.floor((e_hrsold-hrsold)*60);
+                        seconds = Math.floor((e_minsold-minsold)*60);
+                        span_dt_dt.innerHTML = "已萌萌哒运行" + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+            }
+            show_date_time();
+        </script></div>
+        <div>您是第<span id="busuanzi_value_site_uv"></span>个小伙伴</div>
         </div>
 
         <!-- Paradox Footer Right Section -->

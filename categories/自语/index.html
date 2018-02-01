@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html style="display: none;" lang="zh">
+    
+    
     <head>
     <meta charset="utf-8">
     <!--
@@ -589,7 +591,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">16</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">15</span></a>
             </ul>
         </li>
         
@@ -607,7 +609,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/分享/">分享<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/开发/">开发<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/开发/Android/">Android<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/开源/">开源<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/开源/开发/">开发<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/技术/">技术<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/涨知识/">涨知识<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/电脑软件/">电脑软件<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/电脑软件/黑科技/">黑科技<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/自语/">自语<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/软件/">软件<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/软件/开源/">开源<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/闲聊/">闲聊<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/闲聊/使用体验/">使用体验<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/Android/">Android<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Android/开发/">开发<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/分享/">分享<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/开发/">开发<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/开发/Android/">Android<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/开源/">开源<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/开源/开发/">开发<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/技术/">技术<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/涨知识/">涨知识<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/电脑软件/">电脑软件<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/电脑软件/黑科技/">黑科技<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/自语/">自语<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/软件/">软件<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/软件/开源/">开源<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -808,7 +810,28 @@ It will not impact the appearance and can give developers a lot of support :)
         <div id="copyright">
             Copyright&nbsp;©&nbsp;2018&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Peter1303's Blog
             
-            <div>您是第 <span id="busuanzi_value_site_uv"></span> 个小伙伴</div>
+            <div><span id="span_dt_dt"> </span>
+                <script language="javascript">
+                    function show_date_time(){
+                        window.setTimeout("show_date_time()", 1000);
+                        BirthDay=new Date("1/31/2018 00:23:08");//这个日期是可以修改的
+                        today = new Date();
+                        timeold = (today.getTime() - BirthDay.getTime());//其实仅仅改了这里
+                        sectimeold = timeold/1000
+                        secondsold = Math.floor(sectimeold);
+                        msPerDay = 24*60*60*1000
+                        e_daysold = timeold/msPerDay
+                        daysold = Math.floor(e_daysold);
+                        e_hrsold = (e_daysold-daysold)*24;
+                        hrsold = Math.floor(e_hrsold);
+                        e_minsold = (e_hrsold-hrsold)*60;
+                        minsold = Math.floor((e_hrsold-hrsold)*60);
+                        seconds = Math.floor((e_minsold-minsold)*60);
+                        span_dt_dt.innerHTML = "已萌萌哒运行" + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+            }
+            show_date_time();
+        </script></div>
+        <div>您是第<span id="busuanzi_value_site_uv"></span>个小伙伴</div>
         </div>
 
         <!-- Paradox Footer Right Section -->
