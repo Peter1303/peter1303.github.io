@@ -4,6 +4,29 @@
 
     
   <url>
+    <loc>https://peter1303.github.io/2018/02/12/MIUI%E8%87%AA%E5%8A%A8%E6%89%93%E5%8D%A1/</loc>
+    <lastmod>2018-02-12T09:19:12.764Z</lastmod>
+    <data>
+        <display>
+        <title>MIUI自动打卡</title>
+        <pubTime>2018-02-12T06:33:26.000Z</pubTime>
+        
+        <tag>技术</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="https://peter1303.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+             
+              <breadCrumb title="教程" url="https://peter1303.github.io/categories/%E6%8A%80%E6%9C%AF/%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://peter1303.github.io/2018/02/01/Android%E5%BC%80%E5%8F%91%E4%B8%AD%E6%89%93%E5%BC%80%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%AF%E4%BB%98/</loc>
     <lastmod>2018-02-01T10:46:20.710Z</lastmod>
     <data>
@@ -89,9 +112,9 @@
         <title>SharedPreferencesHelper</title>
         <pubTime>2018-01-28T15:34:15.000Z</pubTime>
         
-        <tag>开源</tag>
-         
         <tag>开发</tag>
+         
+        <tag>开源</tag>
          
          
            
@@ -154,9 +177,9 @@
         <title>WP对话框</title>
         <pubTime>2018-01-28T15:53:36.000Z</pubTime>
         
-        <tag>开源</tag>
-         
         <tag>开发</tag>
+         
+        <tag>开源</tag>
          
          
            

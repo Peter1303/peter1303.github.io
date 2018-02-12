@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://peter1303.github.io/"/>
-  <updated>2018-02-01T10:46:20.710Z</updated>
+  <updated>2018-02-12T09:19:12.764Z</updated>
   <id>https://peter1303.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MIUI自动打卡</title>
+    <link href="https://peter1303.github.io/2018/02/12/MIUI%E8%87%AA%E5%8A%A8%E6%89%93%E5%8D%A1/"/>
+    <id>https://peter1303.github.io/2018/02/12/MIUI自动打卡/</id>
+    <published>2018-02-12T06:33:26.000Z</published>
+    <updated>2018-02-12T09:19:12.764Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>版权声明：个人原创，转载请声明原作者和来源！</p></blockquote><p>欢迎各位到来的 酷友（如果你是的话）(<em>/ω＼</em>)<br>首先，先上图：<br><img src="/img/blog/Screenshot_2018-02-12-14-17-14-893.png" alt="img"><br><img src="/img/blog/Screenshot_2018-02-12-14-17-22-803.png" alt="img"></p><hr><h2 id="1-准备"><a href="#1-准备" class="headerlink" title="1.准备"></a>1.准备</h2><blockquote><p>工具：HttpInterceptor</p></blockquote><p>打开后需要 <strong>安装</strong> 一个证书（好像是用来抓 <strong>Https</strong> 协议的）<br>接下来需要设置代理（这里已 <strong>MIUI</strong> 为参考）<br>主机名：127.0.0.1<br>端口：8888<br>如图：<br><img src="/img/blog/Screenshot_2018-02-12-15-07-01-697_com.android.settings.png" alt="img"></p><hr><h2 id="抓包"><a href="#抓包" class="headerlink" title="抓包"></a>抓包</h2><blockquote><p>应用：MIUI论坛</p></blockquote><p>为了能够清楚地看到所抓到的包，打开 <strong>MIUI论坛</strong> 后再次回到 <strong>HttpInterceptor</strong> 的右下角的悬浮按钮的预览中把所抓到的包先清除掉。然后再回到 <strong>MIUI论坛</strong> 随便打开一个帖子，最好再点个赞（手动滑稽）增加抓到的数据包。<br>接着找到一般以 <strong>api.bbs.miui.com</strong> 开头的包。<br><img src="/img/blog/Screenshot_2018-02-12-15-59-00-294_cn.darkal.networkdiagnosis.png" alt="img"><br><img src="/img/blog/Screenshot_2018-02-12-15-08-15-944_cn.darkal.networkdiagnosis.png" alt="img"><br>我的抓到了这个：<br><img src="/img/blog/Screenshot_2018-02-12-15-08-38-409_cn.darkal.networkdiagnosis_Mosaic_16_57_1.png" alt="img"></p><h2 id="Request-Cookies"><a href="#Request-Cookies" class="headerlink" title="Request Cookies"></a>Request Cookies</h2><blockquote><p>人工合成，无添加无污染 ╰(￣ω￣ｏ) 经典…阿呸…</p></blockquote><p>来做个加法：<br>Cookies = cUserId + ; + serviceToken<br>把以上的东西加起来就是我们所需要的 <strong><em>Cookies</em></strong> 了<br>例如：<br><strong><em>cUserId=tEkokjISekcvYonrU;serviceToken=KIbdRhxWs6Y=,bxUCCmeYU3H8WwXTByp GA==</em></strong></p><hr><h2 id="开始搞事情"><a href="#开始搞事情" class="headerlink" title="开始搞事情"></a>开始搞事情</h2><p>下面是我的工程：<br><a href="/files/MIUI打卡.zip">MIUI打卡</a><br>把下面的值改一下就可以了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">private String cookie = &quot;cUserId=xxx;serviceToken=xxx&quot;;</span><br></pre></td></tr></table></figure></p><p>如果不会编译的小白也不用怕，到时候我可能会把这个上架。<br>就酱…</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;版权声明：个人原创，转载请声明原作者和来源！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;欢迎各位到来的 酷友（如果你是的话）(&lt;em&gt;/ω＼&lt;/em&gt;)&lt;br&gt;首先，先上图：&lt;br&gt;&lt;img src=&quot;/img/blog/Screenshot_20
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="https://peter1303.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="教程" scheme="https://peter1303.github.io/categories/%E6%8A%80%E6%9C%AF/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="技术" scheme="https://peter1303.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>Android开发中打开支付宝支付</title>
@@ -382,9 +412,9 @@
       <category term="开发" scheme="https://peter1303.github.io/categories/%E5%BC%80%E6%BA%90/%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="开源" scheme="https://peter1303.github.io/tags/%E5%BC%80%E6%BA%90/"/>
-    
       <category term="开发" scheme="https://peter1303.github.io/tags/%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="开源" scheme="https://peter1303.github.io/tags/%E5%BC%80%E6%BA%90/"/>
     
   </entry>
   
@@ -438,9 +468,9 @@
       <category term="开发" scheme="https://peter1303.github.io/categories/%E5%BC%80%E6%BA%90/%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="开源" scheme="https://peter1303.github.io/tags/%E5%BC%80%E6%BA%90/"/>
-    
       <category term="开发" scheme="https://peter1303.github.io/tags/%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="开源" scheme="https://peter1303.github.io/tags/%E5%BC%80%E6%BA%90/"/>
     
   </entry>
   
